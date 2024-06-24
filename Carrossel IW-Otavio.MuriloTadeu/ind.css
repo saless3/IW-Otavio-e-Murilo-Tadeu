@@ -1,0 +1,116 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('img/dark_souls.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+
+/* Estilo para o contêiner do carrossel */
+.carousel-container {
+    position: relative;
+    width: 90%;
+    max-width: 950px;
+    margin: auto; /* Centraliza horizontalmente */
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #282731;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o carrossel */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Estilo para cada slide do carrossel */
+.carousel-slide {
+    min-width: 100%;
+    position: relative;
+}
+
+/* Estilo para as imagens dentro de cada slide */
+.carousel-slide img {
+    width: 100%;
+    height: auto; /* Altura automática para manter a proporção da imagem */
+    border-radius: 8px; /* Borda arredondada */
+}
+
+/* Estilo para a legenda do carrossel */
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.carousel-caption a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-caption a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para os botões de navegação do carrossel */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* Estilo para o contêiner das miniaturas */
+.thumbnails-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px;
+}
+
+/* Estilo para cada miniatura */
+.thumbnail {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Estilo para as imagens das miniaturas */
+.thumbnail img {
+    width: 100px; /* Tamanho das miniaturas */
+    height: auto; /* Altura automática */
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.thumbnail img:hover {
+    border: 2px solid #fff; /* Borda branca ao passar o mouse */
+}
